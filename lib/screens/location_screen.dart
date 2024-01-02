@@ -1,9 +1,9 @@
-import 'package:delacruz_clima/screens/city_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:test_clima_flutter/screens/city_screen.dart';
 import 'package:test_clima_flutter/utilities/constants.dart';
 import 'dart:convert';
-import 'package:delacruz_clima/services/weather.dart';
-import 'package:delacruz_clima/screens/city_screen.dart';
+import 'package:test_clima_flutter/services/weather.dart';
+import 'package:test_clima_flutter/screens/city_screen.dart';
 
 class LocationScreen extends StatefulWidget {
   LocationScreen(this.data, {super.key});
@@ -86,12 +86,12 @@ class _LocationScreenState extends State<LocationScreen> {
                 child: Row(
                   children: <Widget>[
                     Text(
-                      temp.toStringAsFixed(0) + '°',
-                      // style: kTempTextStyle,
+                      temp.toStringAsFixed(0)+'°',
+                      style: kTempTextStyle,
                     ),
                     Text(
                       weathericon,
-                      // style: kConditionTextStyle,
+                      style: kConditionTextStyle,
                     ),
                   ],
                 ),
@@ -99,9 +99,9 @@ class _LocationScreenState extends State<LocationScreen> {
               Padding(
                 padding: EdgeInsets.only(right: 15.0),
                 child: Text(
-                  "$weathermessage in $city!",
+                  "$weathermessage in $city",
                   textAlign: TextAlign.right,
-                  // style: kMessageTextStyle,
+                  style: kMessageTextStyle,
                 ),
               ),
             ],
@@ -111,4 +111,3 @@ class _LocationScreenState extends State<LocationScreen> {
     );
   }
 }
-

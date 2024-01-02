@@ -8,7 +8,7 @@ class CityScreen extends StatefulWidget {
 }
 
 class _CityScreenState extends State<CityScreen> {
-  String newcity = '';
+  String newcity='';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -68,7 +68,7 @@ class _CityScreenState extends State<CityScreen> {
                 },
                 child: const Text(
                   'Get Weather',
-                  // style: kButtonTextStyle,
+                  style: kButtonTextStyle,
                 ),
               ),
             ],
